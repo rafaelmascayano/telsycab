@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telsycab - Soluciones en Telecomunicaciones</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: #004d99;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('telecom-background.jpg');
+            height: 400px;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .servicios {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .servicios-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .servicio {
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TELSYCAB</h1>
+        <p>Soluciones Integrales en Telecomunicaciones</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h2>Conectando el Futuro</h2>
+            <p>Soluciones de telecomunicaciones adaptadas a sus necesidades</p>
+        </div>
+    </section>
+
+    <section class="servicios" id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+            <div class="servicio">
+                <h3>Internet Empresarial</h3>
+                <p>Conexiones de alta velocidad para empresas</p>
+            </div>
+            <div class="servicio">
+                <h3>Telefonía IP</h3>
+                <p>Sistemas de comunicación avanzados</p>
+            </div>
+            <div class="servicio">
+                <h3>Redes Corporativas</h3>
+                <p>Diseño e implementación de redes</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+        <div style="padding: 2rem; text-align: center;">
+            <h2>Sobre Nosotros</h2>
+            <p>Telsycab es una empresa líder en el sector de las telecomunicaciones, 
+               con más de 10 años de experiencia brindando soluciones tecnológicas 
+               de alta calidad a nuestros clientes.</p>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <div style="padding: 2rem; text-align: center; background-color: #f5f5f5;">
+            <h2>Contacto</h2>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: info@telsycab.com</p>
+            <p>Dirección: Av. Principal #123, Ciudad</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Telsycab - Todos los derechos reservados</p>
+        <div style="margin-top: 1rem;">
+            <a href="#" style="color: white; margin: 0 10px;">Facebook</a>
+            <a href="#" style="color: white; margin: 0 10px;">Twitter</a>
+            <a href="#" style="color: white; margin: 0 10px;">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
