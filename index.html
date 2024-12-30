@@ -12,135 +12,260 @@
             font-family: Arial, sans-serif;
         }
 
+        /* Header styles */
         header {
             background-color: #003366;
-            color: white;
             padding: 1rem;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
         }
 
         nav {
-            background-color: #004d99;
-            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        nav ul {
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
             list-style: none;
             display: flex;
-            justify-content: center;
+            gap: 2rem;
         }
 
-        nav ul li {
-            margin: 0 1rem;
-        }
-
-        nav ul li a {
+        .nav-links a {
             color: white;
             text-decoration: none;
         }
 
+        /* Hero section */
         .hero {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('telecom-background.jpg');
-            height: 400px;
-            background-position: center;
-            background-size: cover;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-4.0.3') center/cover;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
             color: white;
-            text-align: center;
+            padding: 0 1rem;
         }
 
-        .servicios {
-            padding: 2rem;
-            text-align: center;
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
         }
 
-        .servicios-grid {
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background-color: #ff6b00;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ff8533;
+        }
+
+        /* Services section */
+        .services {
+            padding: 5rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #003366;
+        }
+
+        .services-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
         }
 
-        .servicio {
+        .service-card {
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* Contact section */
+        .contact {
+            padding: 5rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #003366;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, .contact-form textarea {
             padding: 1rem;
             border: 1px solid #ccc;
             border-radius: 5px;
+            font-size: 1rem;
         }
 
-        footer {
-            background-color: #003366;
+        .contact-form button {
+            background-color: #ff6b00;
             color: white;
-            padding: 2rem;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #ff8533;
+        }
+
+        /* Partners section */
+        .partners {
+            padding: 5rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .partners h2 {
             text-align: center;
+            margin-bottom: 3rem;
+            color: #003366;
+        }
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .partner-card {
+            text-align: center;
+        }
+
+        .partner-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>TELSYCAB</h1>
-        <p>Soluciones Integrales en Telecomunicaciones</p>
+        <nav>
+            <div class="logo">TELSYCAB</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#partners">Partners</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-
     <section class="hero">
-        <div>
-            <h2>Conectando el Futuro</h2>
-            <p>Soluciones de telecomunicaciones adaptadas a sus necesidades</p>
+        <div class="hero-content">
+            <h1>TELSYCAB</h1>
+            <p>Soluciones integrales en telecomunicaciones para su empresa</p>
+            <button class="cta-button">Contáctanos</button>
         </div>
     </section>
 
-    <section class="servicios" id="servicios">
+    <section class="services" id="servicios">
         <h2>Nuestros Servicios</h2>
-        <div class="servicios-grid">
-            <div class="servicio">
-                <h3>Internet Empresarial</h3>
-                <p>Conexiones de alta velocidad para empresas</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Redes</h3>
+                <p>Instalación y mantenimiento de redes de datos</p>
             </div>
-            <div class="servicio">
+            <div class="service-card">
                 <h3>Telefonía IP</h3>
-                <p>Sistemas de comunicación avanzados</p>
+                <p>Sistemas de comunicación empresarial avanzados</p>
             </div>
-            <div class="servicio">
-                <h3>Redes Corporativas</h3>
-                <p>Diseño e implementación de redes</p>
+            <div class="service-card">
+                <h3>Fibra Óptica</h3>
+                <p>Conexiones de alta velocidad y calidad</p>
             </div>
         </div>
     </section>
 
-    <section class="nosotros" id="nosotros">
-        <div style="padding: 2rem; text-align: center;">
-            <h2>Sobre Nosotros</h2>
-            <p>Telsycab es una empresa líder en el sector de las telecomunicaciones, 
-               con más de 10 años de experiencia brindando soluciones tecnológicas 
-               de alta calidad a nuestros clientes.</p>
+    <section class="contact" id="contacto">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <textarea name="message" rows="5" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section class="partners" id="partners">
+        <h2>Nuestros Partners</h2>
+        <div class="partners-grid">
+            <div class="partner-card">
+                <img src="partner1.jpg" alt="Partner 1">
+            </div>
+            <div class="partner-card">
+                <img src="partner2.jpg" alt="Partner 2">
+            </div>
+            <div class="partner-card">
+                <img src="partner3.jpg" alt="Partner 3">
+            </div>
         </div>
     </section>
 
-    <section class="contacto" id="contacto">
-        <div style="padding: 2rem; text-align: center; background-color: #f5f5f5;">
-            <h2>Contacto</h2>
-            <p>Teléfono: (123) 456-7890</p>
-            <p>Email: info@telsycab.com</p>
-            <p>Dirección: Av. Principal #123, Ciudad</p>
-        </div>
-    </section>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-    <footer>
-        <p>&copy; 2024 Telsycab - Todos los derechos reservados</p>
-        <div style="margin-top: 1rem;">
-            <a href="#" style="color: white; margin: 0 10px;">Facebook</a>
-            <a href="#" style="color: white; margin: 0 10px;">Twitter</a>
-            <a href="#" style="color: white; margin: 0 10px;">LinkedIn</a>
-        </div>
-    </footer>
+        // Button click handler
+        document.querySelector('.cta-button').addEventListener('click', function() {
+            alert('Gracias por su interés. Por favor, contáctenos al correo info@telsycab.com');
+        });
+    </script>
 </body>
 </html>
