@@ -5,13 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TelsyCab</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .logo-container {
+            width: 200px; /* Adjust the width as needed */
+            height: auto;
+        }
+        .logo-image {
+            width: 100%; /* Make the image take the full width of the container */
+            height: auto;
+        }
+        .footer-contact h4 {
+            font-size: 24px; /* Adjust the font size as needed */
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="container">
                 <div class="nav-content">
-                    <img src="./img/logo.png" alt="TelsyCab Logo">
+                    <div class="logo-container">
+                        <img src="./img/logo.png" alt="TelsyCab Logo" class="logo-image">
+                    </div>
                     <ul class="nav-menu">
                         <li><a href="#servicios">Servicios</a></li>
                         <li><a href="#clientes">Clientes</a></li>
@@ -32,7 +47,7 @@
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h1>15 años de experiencia en telecomunicaciones</h1>
+                        <h1>15 años de experiencia   en conectividad y redes</h1>
                         <p>Servicios especializados para empresas operadoras en 9 ciudades</p>
                         <a href="#contacto" class="btn">Contáctanos</a>
                     </div>
@@ -46,36 +61,70 @@
         <section id="servicios" class="services">
             <div class="container">
                 <h2>Nuestros Servicios</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon"><!-- Ícono de Repliegue --></div>
-                        <h3>Repliegue</h3>
-                        <p>Retiramos redes de cobre antiguas, preparando el camino para la tecnología de última generación.</p>
+                
+                <div class="sub-section">
+                    <h3>Área Telecomunicaciones</h3>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="./img/instalacion-de-redes_cableado.jpg" alt="Cableado Estructurado">
+                            </div>
+                            <div class="service-icon"><!-- Ícono de Repliegue --></div>
+                            <h3>Cableado Estructurado</h3>
+                            <p>Realizamos todo tipo de proyectos que permitan concetar los sistemas informáticos de una empresa.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="./img/rack telc.jpg" alt="Fibra Óptica">
+                            </div>
+                            <div class="service-icon"><!-- Ícono de Despliegue de Fibra Óptica --></div>
+                            <h3>Fibra Óptica</h3>
+                            <p>Conectamos al mundo con velocidad y confiabilidad mediante redes de fibra óptica.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="./img/TECH-master.jpg" alt="Desarrollo de sitios móviles">
+                            </div>
+                            <div class="service-icon"><!-- Ícono de Desarrollo de sitios móviles --></div>
+                            <h3>Desarrollo de estaciones móviles</h3>
+                            <p>Diseñamos y construimos estaciones base que garantizan mayor cobertura.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="./img/Certificar puntos.jpg" alt="Certificar puntos de red">
+                            </div>
+                            <div class="service-icon"><!-- Ícono de Diseño RF & FO --></div>
+                            <h3>Certificación de puntos de red</h3>
+                            <p>Utilizamos herramientas de ultima generación para asegurar un alto desempeño en la transmisión de datos.</p>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon"><!-- Ícono de Despliegue de Fibra Óptica --></div>
-                        <h3>Despliegue de Fibra Óptica</h3>
-                        <p>Conectamos al mundo con velocidad y confiabilidad mediante redes de fibra óptica.</p>
+                </div>
+
+                <div class="sub-section">
+                    <h3>Área Eléctrica</h3>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="./img/Area electrica.png" alt="Servicios eléctricos">
+                            </div>
+                            <div class="service-icon"><!-- Ícono de Servicios eléctricos --></div>
+                            <h3>Proyectos y Servicios eléctricos</h3>
+                            <p>Desarrollamos diferentes proyectos eléctricos con certificaciones TE1 y TE2, diseñamos y ejecutamos proyectos con Paneles Solares.</p>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon"><!-- Ícono de Desarrollo de sitios móviles --></div>
-                        <h3>Desarrollo de sitios móviles</h3>
-                        <p>Diseñamos y construimos estaciones base que garantizan mayor cobertura.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon"><!-- Ícono de Diseño RF & FO --></div>
-                        <h3>Diseño RF & FO</h3>
-                        <p>Planificamos redes inteligentes para una conexión más rápida y eficiente.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon"><!-- Ícono de Mantenimiento de redes --></div>
-                        <h3>Mantenimiento de redes</h3>
-                        <p>Mantenemos infraestructuras móviles y fijas en perfecto estado.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon"><!-- Ícono de Servicios eléctricos --></div>
-                        <h3>Servicios eléctricos</h3>
-                        <p>Instalamos y cuidamos los sistemas eléctricos de tus redes.</p>
+                </div>
+
+                <div class="sub-section">
+                    <h3>Área de Seguridad</h3>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="./img/Acceso control 10.png" alt="Mantenimiento de redes">
+                            </div>
+                            <div class="service-icon"><!-- Ícono de Mantenimiento de redes --></div>
+                            <h3>Cámaras de Seguridad y Control de acceso</h3>
+                            <p>Desarrollamos proyectos de instalación cámaras de seguridad y control de acceso.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,22 +133,22 @@
         <section id="clientes" class="clients">
             <div class="container">
                 <h2>Nuestros Clientes</h2>
-                <p>Empresas que confían en nuestra experiencia y calidad de servicio</p>
-                
                 <div class="clients-section">
-                    <div class="client-category">
+                    <div class="client-category telecomunicaciones">
                         <h3>Telecomunicaciones</h3>
                         <div class="client-logos">
-                            <img src="/img/logo-claro.png" alt="Logo Claro">
-                            <img src="/img/logo-entel.png" alt="Logo Entel">
-                            <img src="/img/logo-virgin.png" alt="Logo Virgin">
+                            <img src="/img/Claro-Logo-2004.png" alt="Logo Entel">
+                            <img src="/img/LOGO-ENTEL-300x300.png" alt="Logo Claro">
+                            <img src="/img/WOM.png" alt="Logo WOM">
                         </div>
                     </div>
                     
                     <div class="client-category">
                         <h3>Instituciones</h3>
                         <div class="client-logos">
-                            <img src="/img/logo-fundacion-rosas.png" alt="Logo Fundación Las Rosas">
+                            <img src="/img/Grupo LARI.png" alt="Logo Grupo LARI">
+                            <img src="/img/logo Muni_Villa Alegre.png" alt="Logo Muni Villa Alegre">
+                            <img src="/img/logo_Uni_UTEM.png" alt="Logo Uni UTEM">
                         </div>
                     </div>
                 </div>
@@ -107,7 +156,7 @@
                 <div class="certifications">
                     <h3>Certificaciones y Registros</h3>
                     <div class="certification-item">
-                        <img src="/img/logo-chile-compra.png" alt="Chile Compra">
+                        <img src="/img/logo_chilecompras.png" alt="Chile Compra">
                         <p>Proveedor Certificado</p>
                     </div>
                 </div>
@@ -156,7 +205,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="contacto">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
@@ -164,12 +213,12 @@
                 </div>
                 <div class="footer-contact">
                     <h4>Contáctanos</h4>
-                    <p>Dirección: [Dirección de la empresa]</p>
-                    <p>Teléfono: [Número de teléfono]</p>
-                    <p>Email: [Correo electrónico]</p>
+                    <p>Dirección: Salar Surire 1274, Pudahuel </p>
+                    <p>Teléfono: 9 77771441</p>
+                    <p>Email: contacto@telsycab.cl</p>
                 </div>
                 <div class="footer-social">
-                    <h4>Síguenos</h4>
+                    <h4></h4>
                     <!-- Iconos de redes sociales -->
                 </div>
             </div>

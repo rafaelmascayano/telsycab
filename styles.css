@@ -152,8 +152,39 @@ header {
 }
 
 .service-card h3 {
+    font-size: 1.25rem; /* Make the service card headings smaller */
     margin-bottom: 1rem;
     color: var(--dark);
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.service-image {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the image container */
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+.service-card img[alt="Cableado Estructurado"],
+.service-card img[alt="Desarrollo de sitios móviles"] {
+    max-height: 200px; /* Adjust the height to match each other */
+}
+
+.service-card p {
+    text-align: center; /* Center-align the text in all service cards */
 }
 
 /* Mobile Menu */
@@ -246,6 +277,22 @@ header {
 
 .client-logos img:hover {
     filter: grayscale(0%);
+}
+
+.client-category.telecomunicaciones .client-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.client-category.telecomunicaciones .client-logos img {
+    max-height: 100px; /* Increase the height to match "Instituciones" */
+}
+
+.client-logos img[alt="Logo Entel"] {
+    max-height: 120px; /* Increase the height of the Entel logo */
 }
 
 /* Fix for hero image */
@@ -474,4 +521,38 @@ footer {
     .footer-logo img {
         height: 70px; /* Slightly smaller on mobile */
     }
+}
+
+/* Center text class */
+.center-text {
+    text-align: center;
+}
+
+/* Sub-section styles */
+.sub-section {
+    margin-bottom: 3rem;
+}
+
+.sub-section h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--dark);
+}
+
+.service-card h3 {
+    font-size: 1.25rem; /* Make the service card headings smaller */
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 120px; /* Increased height to allow for larger logo */
+}
+
+.logo-image {
+    max-height: 100%;
+    width: auto;
 }
